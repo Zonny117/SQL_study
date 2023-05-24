@@ -1,0 +1,13 @@
+\c clear
+\h help
+\q quit
+
+● 쿼리문은 세미콜론으로 끝남!!
+● 테이블의 그룹 = 스키마
+
+1. 데이터베이스 생성
+- CREATE DATABASE 데이터베이스명;
+
+2. 데이터베이스 삭제
+- DROP DATABASE 데이터베이스명;
+
