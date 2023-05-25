@@ -6,7 +6,7 @@
 ● 테이블의 그룹 = 스키마
 
 0.실행
-터미널에서 mysql -uroot -p
+터미널에서 mysql -u 사용자명 -p
 설정한 mysql 비밀번호를 입력하면 실행이 된다.
 
 1.데이터베이스
@@ -73,3 +73,15 @@ CRUD (Create, Read, Update, Delete)
 
 테이블 이름 변경
 - RENAME TABLE 기존 테이블명 TO 변경할 테이블명;
+
+조인(JOIN) : 두개의 테이블을 합칠때 사용함, LEFT 혹은 RIGHT로 기준이 될 테이블을 지정할 수 있다.
+- SELECT 필드명 FROM 테이블명 (LEFT / RIGHT) JOIN 합칠 테이블명 ON 조건;
+
+
+3. 덤프 및 복구
+
+데이터베이스 덤프
+덤프할 경로지정) mysqldump -u 사용자명 -p 데이터베이스명 > 파일명.sql
+
+데이터베이스 복구
+덤프파일 경로지정) mysql -u 사용자명 -p 데이터베이스명 < 파일명.sql
